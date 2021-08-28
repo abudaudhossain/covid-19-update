@@ -6,72 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        section {
-            margin: 50px;
-            /* background: #272729; */
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-evenly;
-
-        }
-
-        .card {
-            /* background-color: #272729; */
-            margin: 10px;
-            padding: 25px;
-            /* color: #fff; */
-            /* border-radius: 30px; */
-            width: 350px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            /* line-height: 1.5rem; */
-        }
-
-        .search-area {
-            width: 96%;
-            display: flex;
-            margin: 10px;
-            box-sizing: border-box;
-            border-radius: 30px;
-            border: 2px solid black;
-            overflow: hidden;
-        }
-
-        input {
-            /* width: 80%; */
-            flex-grow: 1;
-        }
-
-        input,
-        .search-btn {
-            padding: 10px;
-            margin: 0;
-            font-weight: 500;
-            font-size: 1.3rem;
-            border: none;
-        }
-
-        .search-btn {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1 style="text-align: center">Coronvirus Information</h1>
+    <h1 class="title" style="text-align: center">Coronvirus Information</h1>
     <section id="container">
         <div class="container">
             <div>
-                <h2>Global Coronvirus Information</h2>
-                <div>
+                <h2 class="title">Global Coronvirus Information</h2>
+                <div class="details">
                     <div class="card">
                         <h4>Global</h4>
                         <h3>Today Coronavirus case</h3>
@@ -105,12 +49,12 @@
                 </div>
             </div>
             <div>
-                <h2>Coronvirus by card</h2>
+                <h2 class="title">Coronvirus by country</h2>
                 <div class="search-area">
                     <input type="text" name="" id="" placeholder="Searching">
                     <button class="search-btn">Search</button>
                 </div>
-                <div id="card-info">
+                <div id="card-info" class="details">
                     <div class="card">
                         <h2>Bangladesh</h2>
                         <p>Cases: 3490 | Today: 11 | Active: 12,344| Today: 13 | Recovered: 345,345| Critical: 12,435
