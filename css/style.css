@@ -25,26 +25,46 @@ section {
     justify-content: space-evenly;
 
 }
-.search-contant{
+
+.search-contant {
     /* display        : none; */
 }
-.details {
-    overflow         : scroll;
+
+#error,
+#loader {
+    color: red;
+}
+
+.details,
+.main-details {
     overflow-x       : hidden;
     margin-bottom    : 100px;
     height           : 80vh;
     /* padding-bottom: 60px; */
 }
 
-.card {
+.details {
+    overflow: scroll;
+}
+
+.card,
+.main-card {
     background-color: #272729;
     margin          : 10px;
     padding         : 25px;
     color           : #f3caca;
     border-radius   : 10px;
-    width           : 350px;
+
     box-shadow      : #ad8f8f73 0px 3px 8px;
     /* line-height  : 1.5rem; */
+}
+
+.main-card {
+    width: 550px;
+}
+
+.card {
+    width: 350px;
 }
 
 .search-area {
@@ -73,4 +93,15 @@ input,
 
 .search-btn {
     cursor: pointer;
+}
+
+.d-flex {
+    display        : flex;
+    justify-content: space-between;
+
+}
+
+.d-flex div h3 {
+    line-height: 2.5rem;
+    font-size  : 1.3rem;
 }

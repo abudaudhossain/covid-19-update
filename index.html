@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -14,37 +18,13 @@
     <section id="container">
         <div class="container">
             <div>
-                <h2 class="title">Global Coronvirus Information</h2>
-                <div class="details">
-                    <div class="card">
-                        <h4>Global</h4>
-                        <h3>Today Coronavirus case</h3>
-                        <h3>123,044</h3>
-                    </div>
-                    <div class="card">
-                        <h4>Global</h4>
-                        <h3>Today Deaths</h3>
-                        <h3>123,044</h3>
-                    </div>
-                    <div class="card">
-                        <h4>Global</h4>
-                        <h3>Today Recovered</h3>
-                        <h3>123,044</h3>
-                    </div>
-                    <div class="card">
-                        <h4>Global</h4>
-                        <h3>Total Coronavirus case</h3>
-                        <h3>123,044</h3>
-                    </div>
-                    <div class="card">
-                        <h4>Global</h4>
-                        <h3>Total Deaths</h3>
-                        <h3>123,044</h3>
-                    </div>
-                    <div class="card">
-                        <h4>Global</h4>
-                        <h3>Total Recovered</h3>
-                        <h3>123,044</h3>
+                <h2 class="title"><span id="country-title"></span> Coronvirus Information</h2>
+                <div class="main-details">
+                    <div class="main-card">
+                        <h4><span id="country-title1"></span></h4>
+                        <div id="country-details" class="d-flex">
+                            <div id="country-loader"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,18 +35,14 @@
                     <button onclick="getSearchValue()" class="search-btn">Search</button>
                 </div>
                 <h3 id="error"></h3>
-               <!-- search data display  -->
+                <!-- search data display  -->
                 <div id="search-info" class="search-contant">
-                    <div class="card">
-                        <h2>Bangladesh</h2>
-                        <p>Cases: 3490 | Today: 11 | Active: 12,344| Today: 13 | Recovered: 345,345| Critical: 12,435
-                        </p>
-                    </div>
+
                 </div>
-              
+
                 <!-- all info display  -->
                 <div id="card-info" class="details">
-                   <h1 id="loader"></h1>
+                    <h1 id="loader"></h1>
                 </div>
             </div>
         </div>
