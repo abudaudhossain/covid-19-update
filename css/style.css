@@ -25,7 +25,9 @@ section {
     justify-content: space-evenly;
 
 }
-
+.search-contant{
+    /* display        : none; */
+}
 .details {
     overflow         : scroll;
     overflow-x       : hidden;
